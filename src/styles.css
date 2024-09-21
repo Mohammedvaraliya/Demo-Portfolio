@@ -105,7 +105,7 @@ a:hover {
 .container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 330px 300px;
+  grid-template-columns: 430px 400px;
   margin: 20px auto;
 }
 
@@ -116,7 +116,7 @@ a:hover {
   flex-direction: column;
   justify-content: flex-start;
   padding: 24px 16px;
-  text-align: center;
+  text-align: justify;
 }
 
 img.socialIcon {

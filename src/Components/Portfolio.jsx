@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/portfolio.jpg";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -31,46 +31,88 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "SmartDesk-djangoApp",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "SmartDesk is a web application developed using the Django framework. It provides user authentication and enables users to create and join rooms where they can interact with other users who share similar interests in technology. This project aims to create a platform that fosters collaboration and knowledge sharing within the student community.",
+    url: "https://github.com/Mohammedvaraliya/SmartDesk-djangoApp",
   },
   {
-    title: "Web Development for Beginners",
+    title: "AllYouNeedNoteBook-ReactApp",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "AllYouNeedNoteBook-ReactApp is a notebook app that allows users to create an account, add notes, and manage their notes. This application is built using React and Node.js, and it uses MongoDB Atlas to store all user accounts and notes.",
+    url: "https://github.com/Mohammedvaraliya/AllYouNeedNoteBook-ReactApp",
   },
   {
-    title: "My Resume Site",
+    title: "AI-Amplify-Hackathon",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "This repository contains the solutions to three problem statements completed during the hackathon. Each problem statement is categorized based on its difficulty level: Easy, Moderate, and Hard.",
+    url: "https://github.com/Mohammedvaraliya/AI-Amplify-Hackathon",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "GoogSoft-ReactApp",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "GoogSoft is a web application that mimics the functionality of Google Search, allowing users to search for web pages, images, news articles, and videos. The application is built using ReactJS and integrates with several RapidAPIs to provide real-time search results.",
+    url: "https://github.com/Mohammedvaraliya/GoogSoft-ReactApp",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio">
+    <section
+      className="padding"
+      id="portfolio"
+      style={{
+        background: "rgba(159,197,232,0.75)",
+      }}
+    >
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              height: "90%",
+              borderRadius: "16px",
+              backgroundColor: "#FFD966",
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                top: "-2px",
+                bottom: "-2px",
+                left: "-2px",
+                right: "-2px",
+                backgroundImage:
+                  "linear-gradient(45deg, rgba(255, 217, 102, 1) 0%, rgba(255, 255, 255, 0) 70%)",
+                zIndex: "-1",
+                borderRadius: "18px",
+              }}
+            />
+            <img
+              src={image}
+              alt={imageAltText}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                borderRadius: "14px",
+                boxShadow: "0 40px 80px rgba(255, 217, 102, 0.5)",
+                backgroundColor: "#fff",
+              }}
+            />
+          </div>
         </div>
         <div className="container">
           {projectList.map((project) => (
-            <div className="box" key={project.title}>
+            <div
+              className="box"
+              key={project.title}
+              style={{
+                background: "rgba(207,226,243,0.75)",
+              }}
+            >
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>

@@ -10,7 +10,7 @@ import React from "react";
  * About background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  * Need an image? Check out https://unsplash.com to download a image you
@@ -24,19 +24,22 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "An analytical problem solver, I bring a unique blend of tenacity, creativity, and rigorous attention to detail. With a passion for coding, I continually refine my expertise, crafting innovative solutions that challenge convention and drive impactful change.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "Web Designing & Development",
+  "Artificial Intelligence & Deep Learning",
+  "Generative AI - Expertise in Large Language Models (LLMs) OpenAI GPT, Google Gemini, Langchain, LlamaIndex",
+  "UI and UX Designing",
+  "Programming Languages - Python, Typescript, JavaScript, Java",
+  "Libraries & Frameworks - Django, React, Next.js, Angular, Express.js",
+  "Machine Learning Frameworks & Libraries - Tensorflow, Pytorch, Scikit-Learn, Numpy",
+  "Databases - PostgreSQL, MongoDB, MySQL, ChromaDB",
+  "CSS Frameworks - Bootstrap, Tailwind CSS, Shadcn/ui, Material UI",
 ];
 
 /**
@@ -45,15 +48,21 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  '"If you really believe in what you\'re doing, work hard, take nothing personally and if something blocks one route, find another. Never give up." — Laurie Notaro';
 
 const About = () => {
   return (
-    <section className="padding" id="about">
+    <section
+      className="padding"
+      id="about"
+      style={{
+        background: "rgba(207,226,243,0.75)",
+      }}
+    >
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
+          background: "rgba(159,197,232,0.75)",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
